@@ -462,7 +462,7 @@
 		const res = await fetch('/api/leaderboard', {
 			method: 'POST',
 			body: JSON.stringify({ 
-				name: nickname,
+				name: "No nickname",
 				score
 			}),
 			headers: {
