@@ -5,32 +5,11 @@
 
 <header>
 	<div class="flex p-4 container mx-auto justify-between">
-		<picture class="basis-[10%]">
-			<source media="(min-width: 0px)" srcset="logo.svg" />
-			<img src="logo.svg" alt="Logo of the company" />
+		<picture class="basis-[10%] max-h-20 [&_*]:max-h-full">
+			<source media="(min-width: 0px)" srcset="favicon.ico" />
+			<img src="favicon.ico" alt="Logo" />
 		</picture>
 
-		<span class="flex gap-x-4">
-			<nav class="list-nav">
-				<ul class="flex [&_li]:!m-0 gap-x-1">
-					{#each base_nav_items as item}
-						<li><a href="/">Тарифы</a></li>
-					{:else}
-						<li><a href="/">Тарифы</a></li>
-						<li><a href="/">Возможности</a></li>
-						<li><a href="/">Войти</a></li>
-					{/each}
-				</ul>
-			</nav>
-			<nav>
-				<ul class="flex [&_li]:!m-0 gap-x-2">
-					{#each extra_nav_items as item}
-						<li class=""><a href="/" class="btn variant-ringed-secondary">Регистрация</a></li>
-					{:else}
-						<li class=""><a href="/" class="btn variant-ringed-secondary">Регистрация</a></li>
-					{/each}
-				</ul>
-			</nav>
-		</span>
+		<h1 class="font-custom text-white self-center">Olzhas Toleutay</h1>
 	</div>
 </header>

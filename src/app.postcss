@@ -1,9 +1,50 @@
 /*place global styles here */
+@font-face {
+	font-family: '04b_19';
+	src: url('/fonts/04b_19.TTF');
+	src: url('/fonts/04b_19.TTF') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--theme-rounded-base: 0.375rem;
+}
 html,
 body {
 	@apply h-full;
+	/* font-family: sans-serif; */
+}
+
+input {
+	@apply px-2 py-1;
 }
 
 .container {
 	@apply px-1;
+}
+
+.font-custom {
+	font-family: '04b_19';
+	--theme-font-family-heading: '04b_19';
+}
+
+.button-custom {
+	border: 3px solid wheat;
+	outline: 2px solid #533545;
+	@apply bg-orange-600 bg-opacity-90 px-2 py-1 focus:bg-orange-700 hover:bg-orange-700 text-[wheat];
+}
+
+.blink {
+	animation: blinking 3s linear infinite;
+}
+
+@keyframes blinking {
+	40% {
+		opacity: 0.3;
+	}
+
+	80% {
+		opacity: 1;
+	}
 }
