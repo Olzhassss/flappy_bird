@@ -36,7 +36,7 @@
 	// Configuration:
 	const ui_height = 512; // game screen height
 	const default_speed = 2; // number of pixels the surroundings are moved per frame, by default.
-	let speed = default_speed * 2; // actual number of pixels the surroundings are moved per frame, changed with difficulty.
+	let speed = default_speed; // actual number of pixels the surroundings are moved per frame, changed with difficulty.
 	const delay = 16; // inverse of frame rate; sets highest boundary for the frame rate of ~60 Hertz
 
 	const bird_timing_contant = 36; // # of frames for the jump animation after which `bird_y_offset` equals the value prior to the animation start
