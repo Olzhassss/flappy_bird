@@ -1,11 +1,7 @@
-# to compile and preview the application with SvelteKit
+# Run the application with NodeJS
 
-`npm install`
+Download `build.zip` and unpack
 
-`npm run build`
+Run `node ./build/index.js`
 
-`npm run preview`
-
-# to run the application with NodeJS
-
-`node ./build/index.js`
+## !\[Note: Connection to MongoDB Cloud has expired. Please use own cluster.\]
